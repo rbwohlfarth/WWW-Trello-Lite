@@ -180,6 +180,10 @@ get the raw data as decoded from JSON.
 
 Robert Wohlfarth <rbwohlfarth@gmail.com>
 
+=head1 REPOSITORY
+
+L<https://github.com/rbwohlfarth/WWW-Trello-Lite>
+
 =head1 SEE ALSO
 
 L<Role::REST::Client>, L<Role::REST::Client::Response>

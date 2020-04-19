@@ -11,5 +11,5 @@ my $request = WWW::Trello::Lite->new(
 );
 my $response = $request->get( 'lists/invalidlist' );
 
-is( $response->failed, '', 'Verified connection to Trello' );
-is( $response->response->content, "invalid key\n", 'Reported invalid board' );
+ok( $response->failed, 'Verified connection to Trello' );
+is( $response->response->content, qr/^invalid key\b/i, 'Reported invalid board' );
